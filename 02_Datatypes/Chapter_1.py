@@ -1,8 +1,7 @@
 sugar_amount = 2
 print(f"Initial Sugar: {sugar_amount}")
 
-
-sugar_amount = 2
+sugar_amount = 12
 print(f"Initial Sugar: {sugar_amount}")
 
 
