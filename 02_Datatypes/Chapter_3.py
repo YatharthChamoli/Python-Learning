@@ -22,5 +22,11 @@ print(f"While tea bags per pot: {bags_per_pot}")
 
 total_cadamom_pods = 10
 pods_per_cup = 3
-leftover_pods = total_cadamom_pods / pods_per_cup
+leftover_pods = total_cadamom_pods % pods_per_cup
 print(f"Leftover cardamom pods: {leftover_pods}")
+
+base_flavour_strength = 2
+scale_factor = 3
+powerful_flavour = base_flavour_strength ** scale_factor
+print(f"Powerful flavour strength: {powerful_flavour}") # 2 * 2 * 2 = 8
+
