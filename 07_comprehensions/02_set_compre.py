@@ -3,5 +3,14 @@ favourite_chais = [
   "Lemon Tea", "Green Tea", "Elaichi Chai"
 ]
 
-unique_chai = { chai for chai in favourite_chais}
+unique_chai = { chai for chai in favourite_chais if len(chai) < 8}
 print(unique_chai)
+
+recipes = {
+  "Masala Chai": ["ginger", "cardamom", "cloves", "cinnamon"],
+  "Elaichi Chai": ["cardamom", "cloves", "cinnamon"],
+  "Spicy Chai": ["ginger", "cardamom", "cloves", "cinnamon", "pepper"]
+}
+
+unique_spices = {spice for ingredients in recipes.values() for spice in ingredients }
+print(unique_spices)
